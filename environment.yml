@@ -1,0 +1,32 @@
+---
+name: estimagic-typing
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10  # dev
+  - jupyterlab  # dev, docs
+  - nlopt  # dev, tests
+  - pdbpp  # dev
+  - pip  # dev, tests, docs
+  - pytest  # dev, tests
+  - pytest-cov  # tests
+  - pytest-xdist  # dev, tests
+  - setuptools_scm  # dev
+  - toml  # dev
+  - joblib  # run, tests
+  - numpy>=1.17.0  # run, tests
+  - pandas  # run, tests
+  - pybaum >= 0.1.2  # run, tests
+  - scipy>=1.2.1  # run, tests
+  - seaborn  # dev, tests
+  - mypy  # dev, tests
+  - pip:  # dev, tests, docs
+      - black  # dev
+      - blackcellmagic  # dev
+      - pre-commit  # dev
+      - -e .  # dev
+      # type stubs
+      - pandas-stubs  # dev, tests
+      - types-cffi  # dev, tests
+      - types-openpyxl  # dev, tests
